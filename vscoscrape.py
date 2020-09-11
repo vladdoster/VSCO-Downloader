@@ -1,10 +1,12 @@
+#!/usr/bin/env python3
+import argparse
+import concurrent.futures
+import os
+import time
+from concurrent.futures import ThreadPoolExecutor
+
 import requests
 from tqdm import tqdm
-import time
-import os
-from concurrent.futures import ThreadPoolExecutor
-import concurrent.futures
-import argparse
 
 
 cwd = os.getcwd()
